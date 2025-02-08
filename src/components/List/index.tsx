@@ -1,6 +1,6 @@
-import "./styles.scss"
+import styles from  "./styles.module.scss"
 
-function ulst() {
+function List() {
   const tasks = [
     {
       task: "React",
@@ -16,10 +16,10 @@ function ulst() {
     },
   ];
   return (
-    <div className="taskList">
+    <div className={styles.taskList}>
       {tasks.map((item, index: number) => (
         <ul key={index}>
-          <li>
+          <li className={styles.item}>
             <h2>{item.task}</h2>
             <span>{item.time}</span>
           </li>
@@ -29,4 +29,4 @@ function ulst() {
   );
 }
 
-export default ulst;
+export default List;

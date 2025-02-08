@@ -1,12 +1,12 @@
 import React from "react";
 import Button from "../ Button";
-import './styles.scss'
+import styles from './styles.module.scss'
 
 class Form extends React.Component{
   render() {
     return (
-      <form className="novaTarefa" >
-        <div className="inputContainer">
+      <form className={styles.novaTarefa} >
+        <div className={styles.inputContainer}>
           <label htmlFor="task">ADD NEW STUDY</label>
           <input
             type="text"
@@ -17,7 +17,7 @@ class Form extends React.Component{
           />
         </div>
       
-        <div className="inputContainer">
+        <div className={styles.inputContainer}>
           <label htmlFor="time">TIME</label>
           <input className="inputContainer"
             type="time"
