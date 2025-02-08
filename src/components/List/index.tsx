@@ -1,4 +1,6 @@
-function List() {
+import "./styles.scss"
+
+function ulst() {
   const tasks = [
     {
       task: "React",
@@ -14,15 +16,17 @@ function List() {
     },
   ];
   return (
-    <div>
+    <div className="taskList">
       {tasks.map((item, index: number) => (
-        <li key={index}>
-          <h3>{item.task}</h3>
-          <span>{item.time}</span>
-        </li>
+        <ul key={index}>
+          <li>
+            <h2>{item.task}</h2>
+            <span>{item.time}</span>
+          </li>
+        </ul>
       ))}
     </div>
   );
 }
 
-export default List;
+export default ulst;

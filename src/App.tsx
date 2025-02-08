@@ -4,10 +4,10 @@ import List from './components/List'
 
 function App() {
   return (
-    <>
+    <div className='AppStyle'>
       <Form></Form>
       <List></List>
-    </>
+    </div>
 )
 }
 
