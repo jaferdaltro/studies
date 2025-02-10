@@ -1,12 +1,14 @@
 import Style from  './App.module.scss'
+import Chronometer from './components/Chronometer'
 import Form from './components/Form'
 import List from './components/List'
 
 function App() {
   return (
     <div className={Style.AppStyle}>
-      <Form></Form>
-      <List></List>
+      <Form />
+      <List />
+      <Chronometer />
     </div>
 )
 }

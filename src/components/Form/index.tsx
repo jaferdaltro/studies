@@ -5,7 +5,7 @@ import styles from './styles.module.scss'
 class Form extends React.Component{
   render() {
     return (
-      <form className={styles.novaTarefa} >
+      <form className={styles.newTask} >
         <div className={styles.inputContainer}>
           <label htmlFor="task">ADD NEW STUDY</label>
           <input

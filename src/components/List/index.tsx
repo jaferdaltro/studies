@@ -18,6 +18,7 @@ function List() {
   ];
   return (
     <div className={styles.taskList}>
+      <h2> Study of the day </h2>
       <ul>
         {tasks.map((item, index: number) => (
           <Item key={index} {...item} />
